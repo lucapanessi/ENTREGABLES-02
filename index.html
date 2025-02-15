@@ -13,17 +13,16 @@
       <a href="#"><img src="flama.webp" alt="" /></a>
       <nav class="navbar-main">
         <a href="#">Home</a>
-        <a href="#">Datos</a>
-        <a href="#">Productos</a>
+        <a href="#">Profesionales</a>
+        <a href="#">Servicios</a>
         <a href="#content_about">Acerca de nosotros</a>
       </nav>
       <nav class="navbar-user">
         <a href="Login.html">Login</a>
       </nav>
-      <form action="#" class="navbar-action">
-        <label for="carrito">Carrito</label
-        ><input type="checkbox" id="carrito" />
-      </form>
+      <nav class="navbar-user">
+        <a href="registro.html">Registro</a>
+      </nav>
     </header>
 
     <!-- PORTADA -->
@@ -35,7 +34,7 @@
           cualquier emergencia. Somos una marca lider con mas de 10 años de
           experiencia en el rubro, tu consulta no es molestia.
         </p>
-        <a href="#">Contactanos</a>
+        <a href="#Contactanos">Contactanos</a>
       </article>
 
       <article id="card_hero">
@@ -55,11 +54,41 @@
             edificios, desde planes de evacuación hasta la protección de
             estructuras con materiales resistentes al fuego. Nuestro equipo de
             expertos garantiza preparación y prevención, asegurando entornos más
-            seguros y cumpliendo con normativas internacionales. Con **Flama**,
-            la seguridad es prioridad. 🔥🚒
+            seguros y cumpliendo con normativas internacionales. con Flama, la
+            seguridad es prioridad. 🔥🚒
           </p>
         </article>
       </header>
     </section>
+
+    <!-- Contacto -->
+    <section id="Contactanos">
+      <header>
+        <h3>Tienes alguna pregunta?</h3>
+      </header>
+      <form action="index.html" method="get">
+        <fieldset>
+          <label for="correo">Correo Electronico</label>
+          <input type="email" name="correo" id="correo" required />
+        </fieldset>
+        <fieldset>
+          <label for="consulta">Escribinos tu consulta</label>
+          <textarea name="consulta" id="consulta" required></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <section>
+        <h3>Redes Sociales</h3>
+        <p>
+          <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+          <a href="#">Instagram</a>
+        </p>
+      </section>
+      <p>Designed by Luca Panessi.</p>
+    </footer>
   </body>
 </html>

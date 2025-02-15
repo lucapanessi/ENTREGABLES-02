@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: #394259;
 }
 a {
   text-decoration: none;
@@ -30,4 +30,31 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+header,
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: white;
+  color: #394259;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+footer a {
+  color: #c09f74;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer section {
+  margin-bottom: 10px;
 }
