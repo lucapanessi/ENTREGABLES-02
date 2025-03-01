@@ -1,0 +1,36 @@
+body > footer {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+body > footer h2 {
+  color: var(--light);
+  font-size: 1rem;
+  font-weight: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 0.25rem;
+}
+
+body > footer h2 a {
+  font-weight: 800;
+  padding: 0.25rem 0.75rem;
+  border: 0.1rem solid var(--alt);
+  color: var(--alt);
+  border-radius: 1rem;
+  background-color: transparent;
+  transform: scale(1);
+  transition: all 240ms ease-in-out;
+}
+body > footer h2 a:hover {
+  background-color: var(--alt);
+  border-color: transparent;
+  color: var(--dark);
+  transform: scale(0.9);
+}

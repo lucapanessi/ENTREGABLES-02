@@ -1,0 +1,153 @@
+#servicios {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 1rem;
+}
+
+#servicios header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 0.25rem;
+  padding: 1rem;
+  background-color: var(--background);
+  border-radius: 4rem;
+}
+
+#servicios header h2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 1rem;
+  color: var(--coffee);
+}
+#servicios header h2::before {
+  content: "";
+  flex: 1;
+  height: 0.25rem;
+  background-color: var(--coffee);
+  border-radius: 0.25rem;
+}
+#servicios header h2::after {
+  content: "";
+  flex: 1;
+  height: 0.25rem;
+  background-color: var(--coffee);
+  border-radius: 0.25rem;
+}
+
+#servicios header p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--light);
+}
+
+#servicios ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#servicios li {
+  width: calc(100% / 3 - 1rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--background);
+  border-radius: 1rem;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transform: scale(0.9);
+  transition: all 240ms ease-in-out;
+}
+
+#servicios li:hover {
+  transform: scale(1);
+  box-shadow: 0 0 0.25rem 0 var(--shadow-bg);
+}
+
+#servicios li picture {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.2rem solid var(--coffee);
+}
+#servicios li picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#servicios li article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+#servicios li h3 {
+  text-wrap: nowrap;
+  color: var(--light);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#servicios p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--light);
+}
+
+#servicios li p.price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--coffee);
+}
+
+#servicios li form {
+}
+#servicios li form button {
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: var(--alt);
+  border: 0.1rem solid var(--alt);
+  transform: scale(0.9);
+  transition: all 240ms ease-in-out;
+}
+
+#servicios li form button:hover {
+  transform: scale(1);
+  background-color: var(--alt);
+  color: var(--background);
+  border-color: var(--background);
+}
+
+@media (max-width: 1024px) {
+  #servicios li {
+    width: 100%;
+  }
+}

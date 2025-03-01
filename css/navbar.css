@@ -1,0 +1,151 @@
+.navbar {
+  background-color: var(--dark);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  z-index: 9;
+}
+
+.navbar > a {
+  display: flex;
+  height: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.navbar-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar-main a {
+  color: var(--light);
+  background-color: var(--coffee);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 0.1rem solid var(--coffee);
+  transform: scale(0.9);
+  transition: all 240ms ease-in-out;
+}
+
+.navbar-main a:hover {
+  background-color: transparent;
+  color: var(--coffee);
+  transform: scale(1);
+}
+
+.navbar-user {
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.navbar-user a {
+  color: var(--alt);
+  border: 0.05rem solid var(--alt);
+  background-color: transparent;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transform: scale(1);
+  transition: all 240ms ease-in-out;
+}
+
+.navbar-user a:hover {
+  background-color: var(--alt);
+  color: var(--dark);
+  transform: scale(0.9);
+}
+
+.navbar-action {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 1rem;
+}
+
+.navbar-action input[type="checkbox"] {
+  display: none;
+}
+
+.navbar-action label {
+  color: #00bfd2;
+  border: 0.05rem solid #00bfd2;
+  background-color: transparent;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#toolbar {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  #toolbar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  .navbar-main {
+    display: none;
+  }
+  .navbar-user {
+    display: none;
+  }
+  #toolbar label {
+    width: 2rem;
+    padding: 0.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--alt);
+  }
+  #toolbar input[type="checkbox"] {
+    display: none;
+  }
+  #toolbar nav {
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100dvh - 6rem);
+    background-color: var(--dark);
+    width: 75dvw;
+    padding: 1rem;
+    gap: 1rem;
+    transform: translateX(100%);
+    transition: all 240ms ease-in-out;
+    z-index: 9;
+    align-items: flex-start;
+  }
+  #toolbar input[type="checkbox"]:checked ~ nav {
+    transform: translateX(0);
+  }
+  #toolbar label {
+    height: 2rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #toolbar nav a {
+    padding: 0.25rem 0.75rem;
+    background-color: var(--background);
+    color: var(--coffee);
+    font-size: 1.25rem;
+    font-weight: 400;
+    border-radius: 1rem;
+  }
+}
