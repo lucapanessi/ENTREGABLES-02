@@ -23,6 +23,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
   background-color: var(--background);
 }
 
